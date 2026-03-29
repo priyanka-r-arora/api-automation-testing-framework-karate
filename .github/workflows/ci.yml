@@ -1,4 +1,4 @@
-name: Karate API Automation CI/CD
+name: Build and Run Tests
 
 on:
   push:
