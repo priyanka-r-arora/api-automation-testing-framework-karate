@@ -1,4 +1,4 @@
-# Karate API Automation Framework
+# Karate API Automation Testing Framework
 
 
 [![CI/CD Pipeline](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml/badge.svg)](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml)
