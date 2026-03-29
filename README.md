@@ -274,9 +274,6 @@ The framework includes a comprehensive GitHub Actions workflow:
 - Parallel execution (full test suite)
 - Negative tests (error scenarios)
 
-### Scheduled Tests
-- Daily test execution at 2 AM UTC
-
 ### Manual Trigger
 Trigger workflow manually with environment selection from GitHub Actions UI
 
