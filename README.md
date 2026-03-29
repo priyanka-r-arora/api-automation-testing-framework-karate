@@ -1,7 +1,7 @@
 # Karate API Automation Testing Framework
 
 
-[![CI/CD Pipeline](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml/badge.svg)](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml)
+[![CI/CD Pipeline](https://github.com/priyanka-r-arora/api-automation-testing-framework-karate/actions/workflows/ci.yml/badge.svg)](https://github.com/priyanka-r-arora/api-automation-testing-framework-karate/actions/workflows/ci.yml)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
@@ -43,7 +43,7 @@ A production-ready API automation framework built with **Karate DSL**, demonstra
 ## Project Architecture
 
 ```
-karate-automation-framework/
+api-automation-testing-framework-karate/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
@@ -99,8 +99,8 @@ karate-automation-framework/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/priyanka-r-arora/karate-automation-framework.git
-   cd karate-automation-framework
+   git clone https://github.com/priyanka-r-arora/api-automation-testing-framework-karate.git
+   cd api-automation-testing-framework-karate
    ```
 
 2. **Install dependencies**
