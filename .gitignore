@@ -1,0 +1,52 @@
+# Karate and Maven
+target/
+.karate/
+*.log
+*.karate-log
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test reports
+allure-results/
+allure-report/
+.allure/
+cucumber-reports/
+karate-reports/
+surefire-reports/
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Test data (if sensitive)
+# src/test/resources/data/sensitive/
+
+# Node modules (if using any JS tooling)
+node_modules/
+
+# Backup files
+*.bak
+*.tmp
