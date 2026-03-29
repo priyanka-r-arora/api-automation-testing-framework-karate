@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://fakestoreapi.com",
+  "timeout": 45000,
+  "retryEnabled": true,
+  "retryCount": 3,
+  "debugMode": true,
+  "parallelThreads": 5,
+  "logLevel": "INFO"
+}

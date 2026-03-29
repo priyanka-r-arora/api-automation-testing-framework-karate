@@ -1,0 +1,62 @@
+[
+  {
+    "email": "testuser1@automation.com",
+    "username": "autouser1",
+    "password": "Test@123",
+    "name": {
+      "firstname": "Auto",
+      "lastname": "User1"
+    },
+    "address": {
+      "city": "Amsterdam",
+      "street": "Damstraat",
+      "number": 100,
+      "zipcode": "1012 JL",
+      "geolocation": {
+        "lat": "52.3676",
+        "long": "4.9041"
+      }
+    },
+    "phone": "+31 6 12345678"
+  },
+  {
+    "email": "testuser2@automation.com",
+    "username": "autouser2",
+    "password": "Test@456",
+    "name": {
+      "firstname": "Test",
+      "lastname": "User2"
+    },
+    "address": {
+      "city": "Rotterdam",
+      "street": "Coolsingel",
+      "number": 200,
+      "zipcode": "3011 AD",
+      "geolocation": {
+        "lat": "51.9225",
+        "long": "4.4792"
+      }
+    },
+    "phone": "+31 6 87654321"
+  },
+  {
+    "email": "testuser3@automation.com",
+    "username": "autouser3",
+    "password": "Test@789",
+    "name": {
+      "firstname": "Automation",
+      "lastname": "User3"
+    },
+    "address": {
+      "city": "Utrecht",
+      "street": "Oudegracht",
+      "number": 300,
+      "zipcode": "3511 NK",
+      "geolocation": {
+        "lat": "52.0907",
+        "long": "5.1214"
+      }
+    },
+    "phone": "+31 6 55512345"
+  }
+]

@@ -1,0 +1,11 @@
+username,password,expectedStatus,description
+johnd,m38rmF$,200,Valid user credentials
+mor_2314,83r5^_,200,Another valid user
+kevinryan,kev02937@,200,Third valid user
+donero,ewedon,200,Fourth valid user
+invaliduser,wrongpass,401,Invalid username
+johnd,wrongpassword,401,Valid username with wrong password
+,m38rmF$,401,Empty username
+johnd,,401,Empty password
+test@test.com,test123,401,Non-existent user
+admin,admin123,401,Admin credentials test
