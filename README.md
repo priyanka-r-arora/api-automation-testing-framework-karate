@@ -1,7 +1,7 @@
 # Karate API Automation Framework
 
 
-[![Build and Deploy](https://github.com/kratostaine/spring-authorization-server/actions/workflows/continuous-integration-workflow.yml/badge.svg)](https://github.com/priyanka-r-arora/karate-api-automation/actions/workflows/ci.yml)
+[![Build and Deploy](https://github.com/kratostaine/spring-authorization-server/actions/workflows/continuous-integration-workflow.yml/badge.svg)](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
@@ -254,7 +254,13 @@ The framework uses tags to categorize test scenarios:
 
 The framework includes a comprehensive GitHub Actions workflow:
 
+### Workflow Execution Order
+1. **Build Verification** - Compile and install dependencies (runs first)
+2. **Smoke Tests** - Critical path validation (after build passes)
+3. **Regression/Parallel/Negative Tests** - Full test suite (after smoke tests)
+
 ### Automated Test Execution
+- Build verification (compile and dependency check)
 - Smoke tests (on every push/PR)
 - Regression tests (after smoke tests pass)
 - Parallel execution (full test suite)
@@ -268,6 +274,12 @@ Trigger workflow manually with environment selection from GitHub Actions UI
 
 ### Artifacts
 All test reports are uploaded as artifacts with 30-day retention
+
+### Known Issues
+**Cloudflare Rate Limiting**: GitHub Actions runners may occasionally receive 403 responses from Fake Store API due to Cloudflare bot protection. This is an API limitation, not a framework issue. Tests are configured with `continue-on-error: true` to handle this gracefully. For production use, consider:
+- Using a different API without Cloudflare protection
+- Implementing retry logic with exponential backoff
+- Running tests from non-cloud environments
 
 ---
 
