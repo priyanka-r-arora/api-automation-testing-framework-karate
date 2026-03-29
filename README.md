@@ -43,7 +43,7 @@ A production-ready API automation framework built with **Karate DSL**, demonstra
 ## Project Architecture
 
 ```
-karate-api-automation/
+karate-automation-framework/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
@@ -57,9 +57,6 @@ karate-api-automation/
 │   │   │   └── carts-operations.feature
 │   │   ├── users/
 │   │   │   └── users-management.feature
-│   │   ├── common/
-│   │   │   ├── auth-helper.feature
-│   │   │   └── api-helpers.feature
 │   ├── runners/
 │   │   ├── ParallelRunner.java
 │   │   ├── SmokeTestRunner.java
@@ -102,8 +99,8 @@ karate-api-automation/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/priyanka-r-arora/karate-api-automation.git
-   cd karate-api-automation
+   git clone https://github.com/priyanka-r-arora/karate-automation-framework.git
+   cd karate-automation-framework
    ```
 
 2. **Install dependencies**
@@ -155,9 +152,6 @@ mvn test -Dtest=ParallelRunner -Dkarate.options="--tags @regression"
 
 # Run negative tests
 mvn test -Dtest=ParallelRunner -Dkarate.options="--tags @negative"
-
-# Exclude certain tags
-mvn test -Dtest=ParallelRunner -Dkarate.options="--tags ~@ignore"
 ```
 
 ### Run Specific Feature File
@@ -356,10 +350,6 @@ The framework uses enterprise-grade Java utilities with Builder and Factory patt
   - `UserBuilder` - Build users with custom fields or use defaults
   - `ProductBuilder` - Build products with category-specific methods
   - `CartBuilder` - Build carts with dynamic product counts
-
-### Reusable Features
-- `auth-helper.feature` - Authentication helper
-- `api-helpers.feature` - Generic API operations
 
 ---
 
