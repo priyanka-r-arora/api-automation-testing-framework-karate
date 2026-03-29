@@ -1,7 +1,7 @@
 # Karate API Automation Framework
 
 
-[![Build and Deploy](https://github.com/kratostaine/spring-authorization-server/actions/workflows/continuous-integration-workflow.yml/badge.svg)](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml)
+[![CI/CD Pipeline](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml/badge.svg)](https://github.com/priyanka-r-arora/karate-automation-framework/actions/workflows/ci.yml)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
