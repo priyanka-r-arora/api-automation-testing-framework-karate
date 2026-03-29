@@ -26,6 +26,20 @@ A production-ready API automation framework built with **Karate DSL**, demonstra
 
 ---
 
+## Important Note
+
+**This framework is designed for learning and demonstration purposes.** It showcases production-ready patterns, architecture and best practices for API test automation using Karate DSL. The framework structure, utilities and CI/CD pipeline configuration can be directly adapted for your own projects.
+
+**About the CI/CD Pipeline:** The GitHub Actions pipeline may experience intermittent failures due to Cloudflare bot protection on the Fake Store API (403 responses). This is a limitation of the demo API, not the framework itself. The pipeline serves as a **reference implementation** demonstrating:
+- Multi-stage test execution (build → smoke → regression → parallel)
+- Environment-specific configurations
+- Automated reporting and artifact management
+- Best practices for CI/CD integration
+
+**For your projects:** Simply point the `baseUrl` to your own API endpoints and the framework will work seamlessly without any Cloudflare-related issues.
+
+---
+
 ## Project Architecture
 
 ```
@@ -276,10 +290,17 @@ Trigger workflow manually with environment selection from GitHub Actions UI
 All test reports are uploaded as artifacts with 30-day retention
 
 ### Known Issues
-**Cloudflare Rate Limiting**: GitHub Actions runners may occasionally receive 403 responses from Fake Store API due to Cloudflare bot protection. This is an API limitation, not a framework issue. Tests are configured with `continue-on-error: true` to handle this gracefully. For production use, consider:
-- Using a different API without Cloudflare protection
-- Implementing retry logic with exponential backoff
-- Running tests from non-cloud environments
+
+**Fake Store API Cloudflare Protection**: The demo API used in this framework is protected by Cloudflare, which may block automated requests from CI/CD runners (GitHub Actions) with 403 responses. This is expected behavior for the demo API and does not reflect any issues with the framework itself.
+
+**This framework is for educational purposes** - use it as a reference to understand:
+- How to structure a production-grade Karate framework
+- Multi-environment configuration patterns
+- CI/CD pipeline setup with GitHub Actions
+- Dynamic test data generation with Factory and Builder patterns
+- Report generation and artifact management
+
+**When adapting this for your projects**, simply update the `baseUrl` in your environment configs to point to your own APIs, and the framework will work without any Cloudflare-related issues.
 
 ---
 

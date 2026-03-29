@@ -2,7 +2,7 @@ name: Karate API Automation CI/CD
 
 on:
   push:
-    branches: [ main, feature/* ]
+    branches: [ feature/* ]
   pull_request:
     branches: [ main ]
   schedule:
